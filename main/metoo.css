@@ -1,0 +1,192 @@
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* fraunces-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+ 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+  }
+ 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+ 
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", "sans-serif";
+    font-size: 18px;
+    line-height: normal;
+  }
+ 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav__item + .nav__item{
+    padding-left: 33px;
+}
+
+.nav__link{
+    color: #83888F;
+    font-family: Barlow;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+}
+
+.nav__link:hover{
+    color: black;
+}
+
+/* main */
+
+/* Happy */
+
+.Happy .container{
+    
+    background-image: url("../img/Bitmap.png");    
+    background-repeat: no-repeat;
+    width: 1280px;  
+    height: 600px;     
+}
+
+.Happy__heading{
+    width: 493px;
+    color: #FEFCF7;
+    font-family: "Fraunces";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px; 
+    padding-top: 100px;
+    margin-left: 33px;
+}
+
+.Happy__text{
+    width: 400px;
+    color: #FEFCF7;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    opacity: 0.8;
+    padding-bottom: 30px;
+    margin-left: 33px;
+}
+
+.Happy__button{
+    padding: 15px 31px;
+    border-radius: 6px;
+    background: #66D2CF;
+    color: white;
+    margin-left: 33px;
+}
+
+/* Moonlight */
+
+.Moonlight{
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 200px ;
+}
+
+.Moonlight__info{
+    width: 1111px;
+    height: 196px;
+    background-image:url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Moonlight__list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    width: 1111px;
+    margin: 0;
+    margin-top: -50px;
+}
+
+.Moonlight__heading{
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-family: "Fraunces ";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 32px; 
+}
+
+.Moonlight__text{
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
