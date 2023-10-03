@@ -1,0 +1,422 @@
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* fraunces-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+ 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+  }
+ 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+ 
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", "sans-serif";
+    font-size: 18px;
+    line-height: normal;
+  }
+ 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav__item + .nav__item{
+    padding-left: 33px;
+}
+
+.nav__link{
+    color: #83888F;
+    font-family: Barlow;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+}
+
+.nav__link:hover{
+    color: black;
+}
+
+/* main */
+
+/* Happy */
+
+.Happy .container{
+    
+    background-image: url("../BMW/Bitmap.png");    
+    background-repeat: no-repeat;
+    width: 1280px;  
+    height: 600px;     
+}
+
+.Happy__heading{
+    width: 493px;
+    color: #FEFCF7;
+    font-family: "Fraunces";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px; 
+    padding-top: 100px;
+    margin-left: 33px;
+}
+
+.Happy__text{
+    width: 400px;
+    color: #FEFCF7;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    opacity: 0.8;
+    padding-bottom: 30px;
+    margin-left: 33px;
+}
+
+.Happy__button{
+    padding: 15px 31px;
+    border-radius: 6px;
+    background: #66D2CF;
+    color: white;
+    margin-left: 33px;
+}
+
+/* Moonlight */
+
+.Moonlight{
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 200px ;
+}
+
+.Moonlight__info{
+    width: 1111px;
+    height: 196px;
+    background-image:url("../BMW/brabus.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Moonlight__list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    width: 1111px;
+    margin: 0;
+    margin-top: -50px;
+}
+
+.Moonlight__heading{
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-family: "Fraunces ";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 32px; 
+}
+
+.Moonlight__text{
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+/* Good */
+
+.Good{
+    margin-top: 150px;
+}
+
+.Good__info{
+    width: 1280px;
+    height: 577px;
+    border-radius: 10px;
+    background: #2C343E;
+}
+
+.Good__schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Good__title{
+    color: #FEFCF7;
+    text-align: center;
+    font-family: "Fraunces";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; 
+    padding-top: 80px;
+}
+
+.Good__text{
+    width: 540px;
+    color: #FEFCF7;
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    opacity: 0.8;
+}
+
+.Good__list{
+    width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-left: 50px;
+    position: absolute;
+    margin-top: -200px;
+}
+
+.Good__item{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 382px;
+    border-radius: 8px;
+    background: #0E8784;
+}
+
+.Good__img{
+    margin: 72px 136px;
+}
+
+.Good__heading{
+    color: #FEFCF7;
+    text-align: center;
+    font-family: "Fraunces ";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; 
+    margin-top: -24px;
+}
+
+.Good__heading:nth-child(3){
+    color: #FEFCF7;
+    text-align: center;
+    font-family: "Fraunces ";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; 
+    padding-top: 50px;
+}
+
+.Good__paragraph{
+    width: 255px;
+    color: #FEFCF7;
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-left: 50px;
+}
+
+
+/* Laziz__aka */
+
+.Laziz__aka .container{
+    height: 565px;
+}
+
+.Laziz__aka__linear{
+    color: #83888F;
+    font-family: "Fraunces ";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; 
+    margin: 0;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    position: relative;
+    margin-left: 50px;
+}
+
+
+.Laziz__aka__circle:nth-child(1){
+    transform: translateX(800px);
+    position: absolute;
+}
+
+.Laziz__aka__circle:nth-child(2){
+    transform: translateX(400px);
+}
+
+.Laziz__aka__circle:nth-child(3){
+    transform: translateX(30px);
+}
+
+.Laziz__aka__list{
+    margin-top: 100px;
+    width: 1045px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 95px;
+
+}
+
+.Laziz__aka__heading{
+    width: 200px;
+    color: #333D4B;
+    font-family: "Fraunces" ;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px; 
+}
+
+.Laziz__aka__text{
+    width: 285px;
+    color: #333D4B;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+.Laziz__aka__item{
+    height: 355px;
+}
+
+.Laziz__aka__link{
+    padding: 15px 31px;
+    border-radius: 6px;
+    background: #66D2CF;
+    color: white;
+    margin-left: 50px;
+}
+
+.Laziz__aka__cursor{
+    transform: translate(-40px,25px);
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 300px;
+    background-color: #2C343E;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__item + .footer__item{
+    margin-left: 33px;
+}
+
+.footer__link{
+    color: #83888F;
+    font-family: "Barlow";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+}
+
+.footer__link:hover{
+    color: #ffffff;
+    font-family: "Barlow";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: 0.923px;
+    text-transform: uppercase;   
+}
+
+.footer__cursor{
+    transform: translate(-250px,10px);
+}
